@@ -1,13 +1,12 @@
-USER = endersonmaia
-NAME = $(USER)/totvs-appserver
-VERSION = 17.3.0.13
+VERSION = v20220823
+NAME = $(whoami)/protheus-docker
 
 .PHONY: all
 all: build
 
 .PHONY: build
 build:
-	docker image build -t $(NAME):$(VERSION) --rm .
+	docker image build -t $(NAME):$(VERSION) --rm . rootfs
 
 .PHONY: tag_latest
 tag_latest:

@@ -1,4 +1,4 @@
-version: '2'
+version: '1'
 
 services:
 
@@ -13,5 +13,5 @@ services:
       - DBACCESS_ALIAS=${DBACCESS_ALIAS}
       - DBACCESS_PORT=${DBACCESS_PORT}
     volumes:
-      - ${PROTHEUS_DATA_PATH}:/totvs12/protheus_data
-      - ${PROTHEUS_APO_PATH}:/totvs12/protheus/apo
+      - ${PROTHEUS_DATA_PATH}:/volume/protheus_data
+      - ${PROTHEUS_APO_PATH}:/volume/apo
